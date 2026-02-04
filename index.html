@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏 - Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🐍 贪吃蛇游戏</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">分数:</span>
+                    <span id="score" class="value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">最高分:</span>
+                    <span id="highScore" class="value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">速度:</span>
+                    <span id="speed" class="value">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            
+            <div id="gameOverlay" class="game-overlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">欢迎来到贪吃蛇游戏！</h2>
+                    <p id="overlayMessage">使用方向键控制蛇的移动</p>
+                    <div class="overlay-buttons">
+                        <button id="startBtn" class="game-btn primary">开始游戏</button>
+                        <button id="pauseBtn" class="game-btn secondary" style="display: none;">暂停</button>
+                        <button id="resumeBtn" class="game-btn secondary" style="display: none;">继续</button>
+                        <button id="restartBtn" class="game-btn danger">重新开始</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-panel">
+            <div class="controls-section">
+                <h3>游戏控制</h3>
+                <div class="control-grid">
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span class="desc">向上</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↓</span>
+                        <span class="desc">向下</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">←</span>
+                        <span class="desc">向左</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">→</span>
+                        <span class="desc">向右</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">空格</span>
+                        <span class="desc">暂停/继续</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">R</span>
+                        <span class="desc">重新开始</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h3>游戏设置</h3>
+                <div class="setting-item">
+                    <label for="difficulty">难度等级:</label>
+                    <select id="difficulty">
+                        <option value="easy">简单 (慢速)</option>
+                        <option value="medium" selected>中等 (正常)</option>
+                        <option value="hard">困难 (快速)</option>
+                        <option value="extreme">极限 (超快)</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="gridSize">网格大小:</label>
+                    <select id="gridSize">
+                        <option value="15">15x15 (小)</option>
+                        <option value="20" selected>20x20 (中)</option>
+                        <option value="25">25x25 (大)</option>
+                        <option value="30">30x30 (超大)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <h3>游戏规则</h3>
+            <ul>
+                <li>使用方向键控制蛇的移动方向</li>
+                <li>吃到食物（红色方块）可以增长并获得分数</li>
+                <li>撞墙或撞到自己的身体游戏结束</li>
+                <li>随着分数增加，蛇的移动速度会加快</li>
+                <li>游戏会自动保存你的最高分记录</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
