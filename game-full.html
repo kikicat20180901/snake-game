@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 贪吃蛇游戏 - Snake Game</title>
+    <meta name="description" content="一个功能完整的贪吃蛇游戏，支持多种难度等级和响应式设计">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .game-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        .game-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .features {
+            margin: 30px 0;
+            text-align: left;
+        }
+        .features h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+        .mobile-notice {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .container { padding: 20px; margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 贪吃蛇游戏</h1>
+        <p>一个功能完整的HTML5贪吃蛇游戏，支持多种难度和响应式设计</p>
+        
+        <div class="features">
+            <h3>🎮 游戏特色</h3>
+            <ul>
+                <li>4种难度等级（简单到极限）</li>
+                <li>响应式设计，完美支持手机</li>
+                <li>触摸控制和键盘控制</li>
+                <li>分数记录和最高分保存</li>
+                <li>现代化UI设计</li>
+            </ul>
+        </div>
+        
+        <div class="mobile-notice">
+            📱 <strong>移动端提示</strong>: 支持触摸滑动控制，在手机上有更好的游戏体验！
+        </div>
+        
+        <a href="game.html" class="game-button">🚀 开始游戏</a>
+        <a href="https://github.com/kikicat20180901/snake-game" class="game-button" style="background: linear-gradient(45deg, #667eea, #764ba2);">📁 查看源码</a>
+    </div>
+</body>
+</html>
