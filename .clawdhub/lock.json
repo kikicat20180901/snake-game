@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1769693644069
+    },
+    "polymarket-agent": {
+      "version": "1.0.2",
+      "installedAt": 1769694885712
+    }
+  }
+}

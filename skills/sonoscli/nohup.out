@@ -1,0 +1,381 @@
+[90m2026-01-29T13:54:27.744Z[39m [35m[canvas][39m [36mhost mounted at http://127.0.0.1:18789/__clawdbot__/canvas/ (root /root/clawd/canvas)[39m
+2026-01-29T13:54:27.799Z bonjour: starting (hostname=VM-0-9-opencloudos, instance="VM-0-9-opencloudos (Clawdbot)", gatewayPort=18789, sshPort=22)
+[90m2026-01-29T13:54:27.829Z[39m [36m[heartbeat][39m [36mstarted[39m
+[90m2026-01-29T13:54:27.834Z[39m [36m[gateway][39m [36magent model: minimax/MiniMax-M2.1[39m
+[90m2026-01-29T13:54:27.836Z[39m [36m[gateway][39m [36mlistening on ws://127.0.0.1:18789 (PID 17135)[39m
+[90m2026-01-29T13:54:27.838Z[39m [36m[gateway][39m [36mlistening on ws://[::1]:18789[39m
+[90m2026-01-29T13:54:27.841Z[39m [36m[gateway][39m [36mlog file: /tmp/clawdbot/clawdbot-2026-01-29.log[39m
+[90m2026-01-29T13:54:27.873Z[39m [36m[browser/server][39m [36mBrowser control listening on http://127.0.0.1:18791/[39m
+2026-01-29T13:54:27.905Z Registered hook: boot-md -> gateway:startup
+2026-01-29T13:54:27.908Z Registered hook: command-logger -> command
+2026-01-29T13:54:27.910Z Registered hook: session-memory -> command:new
+[90m2026-01-29T13:54:27.913Z[39m [33m[hooks][39m [36mloaded 3 internal hook handlers[39m
+[90m2026-01-29T13:54:29.153Z[39m [35m[health][39m [31minitial refresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T13:54:29.228Z[39m [34m[telegram][39m [36m[default] starting provider (@cuteshushu_bot)[39m
+[90m2026-01-29T13:54:29.343Z[39m [36m[skills][39m [90mSanitized skill command name "skill-creator" to "/skill_creator".[39m
+[90m2026-01-29T13:54:29.345Z[39m [36m[skills][39m [90mSanitized skill command name "web-search" to "/web_search".[39m
+[90m2026-01-29T13:54:29.774Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636904,"message":{"message_id":83,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769694674,"text":"npx molthub@latest install polymarket-agent"}}[39m
+2026-01-29T13:54:29.820Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=99 preview="[Telegram 猫 熊 id:8594132339 +1m 2026-01-29 21:51 GMT+8] npx molthub@latest install polymarket-agent"
+[90m2026-01-29T13:54:30.309Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T13:54:30.312Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=12 queueSize=0[39m
+[90m2026-01-29T13:54:30.314Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T13:54:30.316Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=2 queueSize=0[39m
+[90m2026-01-29T13:54:30.356Z[39m [33m[agent/embedded][39m [90membedded run start: runId=efad8481-8789-42e8-9840-a2badc1ee8a0 sessionId=b8f002d4-a1a5-4da8-baf2-7771b291efdc provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T13:54:30.393Z[39m [31m[diagnostic][39m [90msession state: sessionId=b8f002d4-a1a5-4da8-baf2-7771b291efdc sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T13:54:30.396Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=b8f002d4-a1a5-4da8-baf2-7771b291efdc totalActive=1[39m
+[90m2026-01-29T13:54:30.398Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=efad8481-8789-42e8-9840-a2badc1ee8a0 sessionId=b8f002d4-a1a5-4da8-baf2-7771b291efdc[39m
+[90m2026-01-29T13:54:30.403Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=efad8481-8789-42e8-9840-a2badc1ee8a0[39m
+[90m2026-01-29T13:54:30.408Z[39m [36m[ws][39m [36m→ event agent seq=1 clients=0 run=efad8481…e8a0 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T13:54:34.808Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=efad8481-8789-42e8-9840-a2badc1ee8a0 tool=exec toolCallId=call_function_pkt02e9wn57u_1[39m
+[90m2026-01-29T13:54:44.823Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=efad8481-8789-42e8-9840-a2badc1ee8a0 tool=exec toolCallId=call_function_pkt02e9wn57u_1[39m
+[90m2026-01-29T13:54:48.200Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=efad8481-8789-42e8-9840-a2badc1ee8a0 tool=process toolCallId=call_function_fnevyazh4hsy_1[39m
+[90m2026-01-29T13:54:48.202Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=efad8481-8789-42e8-9840-a2badc1ee8a0 tool=process toolCallId=call_function_fnevyazh4hsy_1[39m
+2026-01-29T13:54:48.566Z [clawdbot] Unhandled promise rejection: TypeError: fetch failed
+    at node:internal/deps/undici/undici:14902:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2026-01-29T14:14:29.026Z[39m [35m[canvas][39m [36mhost mounted at http://127.0.0.1:18789/__clawdbot__/canvas/ (root /root/clawd/canvas)[39m
+2026-01-29T14:14:29.076Z bonjour: starting (hostname=VM-0-9-opencloudos, instance="VM-0-9-opencloudos (Clawdbot)", gatewayPort=18789, sshPort=22)
+[90m2026-01-29T14:14:29.103Z[39m [36m[heartbeat][39m [36mstarted[39m
+[90m2026-01-29T14:14:29.107Z[39m [36m[gateway][39m [36magent model: minimax/MiniMax-M2.1[39m
+[90m2026-01-29T14:14:29.108Z[39m [36m[gateway][39m [36mlistening on ws://127.0.0.1:18789 (PID 22083)[39m
+[90m2026-01-29T14:14:29.110Z[39m [36m[gateway][39m [36mlistening on ws://[::1]:18789[39m
+[90m2026-01-29T14:14:29.112Z[39m [36m[gateway][39m [36mlog file: /tmp/clawdbot/clawdbot-2026-01-29.log[39m
+[90m2026-01-29T14:14:29.142Z[39m [36m[browser/server][39m [36mBrowser control listening on http://127.0.0.1:18791/[39m
+2026-01-29T14:14:29.184Z Registered hook: boot-md -> gateway:startup
+2026-01-29T14:14:29.187Z Registered hook: command-logger -> command
+2026-01-29T14:14:29.189Z Registered hook: session-memory -> command:new
+[90m2026-01-29T14:14:29.192Z[39m [33m[hooks][39m [36mloaded 3 internal hook handlers[39m
+[90m2026-01-29T14:14:30.457Z[39m [34m[telegram][39m [36m[default] starting provider (@cuteshushu_bot)[39m
+[90m2026-01-29T14:14:30.572Z[39m [36m[skills][39m [90mSanitized skill command name "skill-creator" to "/skill_creator".[39m
+[90m2026-01-29T14:14:30.573Z[39m [36m[skills][39m [90mSanitized skill command name "web-search" to "/web_search".[39m
+[90m2026-01-29T14:14:30.588Z[39m [35m[health][39m [31minitial refresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:14:31.006Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636912,"message":{"message_id":96,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696033,"text":"/reset","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}[39m
+[90m2026-01-29T14:14:31.008Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636913,"message":{"message_id":97,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696035,"text":"Hi"}}[39m
+2026-01-29T14:14:31.227Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=58 preview="[Telegram 猫 熊 id:8594132339 +1m 2026-01-29 22:13 GMT+8] Hi"
+[90m2026-01-29T14:14:31.699Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:14:31.701Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=13 queueSize=0[39m
+[90m2026-01-29T14:14:31.703Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:14:31.704Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:14:31.707Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=2[39m
+[90m2026-01-29T14:14:31.730Z[39m [33m[agent/embedded][39m [90membedded run start: runId=cd60af5e-e4aa-43bf-95bb-fd3be0bc002d sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=unknown[39m
+[90m2026-01-29T14:14:31.763Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:14:31.765Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:14:31.766Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=cd60af5e-e4aa-43bf-95bb-fd3be0bc002d sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:14:31.770Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=cd60af5e-e4aa-43bf-95bb-fd3be0bc002d[39m
+[90m2026-01-29T14:14:31.776Z[39m [36m[ws][39m [36m→ event agent seq=1 clients=0 run=cd60af5e…002d agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:14:36.537Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=cd60af5e-e4aa-43bf-95bb-fd3be0bc002d[39m
+[90m2026-01-29T14:14:36.538Z[39m [36m[ws][39m [36m→ event agent seq=2 clients=0 run=cd60af5e…002d agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:14:36.540Z[39m [36m[ws][39m [36m→ event chat seq=3 clients=0[39m
+[90m2026-01-29T14:14:36.541Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=cd60af5e-e4aa-43bf-95bb-fd3be0bc002d sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=4775[39m
+[90m2026-01-29T14:14:36.542Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:14:36.544Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:14:36.547Z[39m [33m[agent/embedded][39m [90membedded run done: runId=cd60af5e-e4aa-43bf-95bb-fd3be0bc002d sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=4842 aborted=false[39m
+[90m2026-01-29T14:14:36.553Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=4848 active=0 queued=0[39m
+[90m2026-01-29T14:14:36.554Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=4852 active=0 queued=1[39m
+[90m2026-01-29T14:14:36.555Z[39m [31m[diagnostic][39m [33mlane wait exceeded: lane=session:agent:main:main waitedMs=4848 queueAhead=0[39m
+[90m2026-01-29T14:14:36.556Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=4848 queueSize=0[39m
+[90m2026-01-29T14:14:36.557Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:14:36.558Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:14:36.584Z[39m [33m[agent/embedded][39m [90membedded run start: runId=5d2b9a49-da7c-4f4d-9345-d6001efaa641 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:14:36.601Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:14:36.602Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:14:36.603Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=5d2b9a49-da7c-4f4d-9345-d6001efaa641 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:14:36.604Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=5d2b9a49-da7c-4f4d-9345-d6001efaa641[39m
+[90m2026-01-29T14:14:36.606Z[39m [36m[ws][39m [36m→ event agent seq=4 clients=0 run=5d2b9a49…a641 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:14:37.429Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636914,"message":{"message_id":98,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696044,"text":"/restart","entities":[{"offset":0,"length":8,"type":"bot_command"}]}}[39m
+[90m2026-01-29T14:14:43.201Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=5d2b9a49-da7c-4f4d-9345-d6001efaa641[39m
+[90m2026-01-29T14:14:43.203Z[39m [36m[ws][39m [36m→ event agent seq=5 clients=0 run=5d2b9a49…a641 agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:14:43.205Z[39m [36m[ws][39m [36m→ event chat seq=6 clients=0[39m
+[90m2026-01-29T14:14:43.207Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=5d2b9a49-da7c-4f4d-9345-d6001efaa641 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=6603[39m
+[90m2026-01-29T14:14:43.209Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:14:43.210Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:14:43.214Z[39m [33m[agent/embedded][39m [90membedded run done: runId=5d2b9a49-da7c-4f4d-9345-d6001efaa641 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=6655 aborted=false[39m
+[90m2026-01-29T14:14:43.218Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=6659 active=0 queued=0[39m
+[90m2026-01-29T14:14:43.219Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=6662 active=0 queued=0[39m
+[90m2026-01-29T14:14:44.302Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636915,"message":{"message_id":99,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696070,"text":"Hi"}}[39m
+2026-01-29T14:14:44.336Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=54 preview="[Telegram 猫 熊 id:8594132339 2026-01-29 22:14 GMT+8] Hi"
+[90m2026-01-29T14:14:45.692Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:14:45.694Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=8 queueSize=0[39m
+[90m2026-01-29T14:14:45.696Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:14:45.698Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:14:45.719Z[39m [33m[agent/embedded][39m [90membedded run start: runId=728c7f2d-2f01-4aef-94f8-dd1b4a1bf69b sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:14:45.730Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:14:45.731Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:14:45.732Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=728c7f2d-2f01-4aef-94f8-dd1b4a1bf69b sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:14:45.733Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=728c7f2d-2f01-4aef-94f8-dd1b4a1bf69b[39m
+[90m2026-01-29T14:14:45.734Z[39m [36m[ws][39m [36m→ event agent seq=7 clients=0 run=728c7f2d…f69b agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:14:48.717Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=728c7f2d-2f01-4aef-94f8-dd1b4a1bf69b[39m
+[90m2026-01-29T14:14:48.718Z[39m [36m[ws][39m [36m→ event agent seq=8 clients=0 run=728c7f2d…f69b agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:14:48.720Z[39m [36m[ws][39m [36m→ event chat seq=9 clients=0[39m
+[90m2026-01-29T14:14:48.721Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=728c7f2d-2f01-4aef-94f8-dd1b4a1bf69b sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=2989[39m
+[90m2026-01-29T14:14:48.722Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:14:48.723Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:14:48.727Z[39m [33m[agent/embedded][39m [90membedded run done: runId=728c7f2d-2f01-4aef-94f8-dd1b4a1bf69b sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=3028 aborted=false[39m
+[90m2026-01-29T14:14:48.731Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=3032 active=0 queued=0[39m
+[90m2026-01-29T14:14:48.732Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=3036 active=0 queued=0[39m
+[90m2026-01-29T14:14:59.094Z[39m [36m[ws][39m [36m→ event tick seq=10 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:15:29.096Z[39m [36m[ws][39m [36m→ event tick seq=11 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:15:30.736Z[39m [35m[health][39m [31mrefresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:15:59.093Z[39m [36m[ws][39m [36m→ event tick seq=12 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:16:10.547Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636916,"message":{"message_id":105,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696170,"text":"can u check from nohup.out why u always show disruption"}}[39m
+2026-01-29T14:16:10.582Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=111 preview="[Telegram 猫 熊 id:8594132339 +1m 2026-01-29 22:16 GMT+8] can u check from nohup.out why u always show disruption"
+[90m2026-01-29T14:16:11.134Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:16:11.136Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:16:11.137Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:16:11.138Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:16:11.185Z[39m [33m[agent/embedded][39m [90membedded run start: runId=37a1ffb0-7d22-43ba-a71c-fad77505111e sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:16:11.205Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:16:11.207Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:16:11.208Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=37a1ffb0-7d22-43ba-a71c-fad77505111e sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:16:11.210Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=37a1ffb0-7d22-43ba-a71c-fad77505111e[39m
+[90m2026-01-29T14:16:11.212Z[39m [36m[ws][39m [36m→ event agent seq=13 clients=0 run=37a1ffb0…111e agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:16:16.375Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=37a1ffb0-7d22-43ba-a71c-fad77505111e tool=exec toolCallId=call_function_7skjbnbf1en8_1[39m
+[90m2026-01-29T14:16:16.382Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=37a1ffb0-7d22-43ba-a71c-fad77505111e tool=exec toolCallId=call_function_7skjbnbf1en8_1[39m
+2026-01-29T14:16:17.395Z [clawdbot] Unhandled promise rejection: TypeError: fetch failed
+    at node:internal/deps/undici/undici:14902:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2026-01-29T14:21:12.802Z[39m [35m[canvas][39m [36mhost mounted at http://127.0.0.1:18789/__clawdbot__/canvas/ (root /root/clawd/canvas)[39m
+2026-01-29T14:21:12.851Z bonjour: starting (hostname=VM-0-9-opencloudos, instance="VM-0-9-opencloudos (Clawdbot)", gatewayPort=18789, sshPort=22)
+[90m2026-01-29T14:21:12.881Z[39m [36m[heartbeat][39m [36mstarted[39m
+[90m2026-01-29T14:21:12.885Z[39m [36m[gateway][39m [36magent model: minimax/MiniMax-M2.1[39m
+[90m2026-01-29T14:21:12.886Z[39m [36m[gateway][39m [36mlistening on ws://127.0.0.1:18789 (PID 24079)[39m
+[90m2026-01-29T14:21:12.888Z[39m [36m[gateway][39m [36mlistening on ws://[::1]:18789[39m
+[90m2026-01-29T14:21:12.890Z[39m [36m[gateway][39m [36mlog file: /tmp/clawdbot/clawdbot-2026-01-29.log[39m
+[90m2026-01-29T14:21:12.920Z[39m [36m[browser/server][39m [36mBrowser control listening on http://127.0.0.1:18791/[39m
+2026-01-29T14:21:12.951Z Registered hook: boot-md -> gateway:startup
+2026-01-29T14:21:12.953Z Registered hook: command-logger -> command
+2026-01-29T14:21:12.956Z Registered hook: session-memory -> command:new
+[90m2026-01-29T14:21:12.958Z[39m [33m[hooks][39m [36mloaded 3 internal hook handlers[39m
+[90m2026-01-29T14:21:14.029Z[39m [34m[telegram][39m [36m[default] starting provider (@cuteshushu_bot)[39m
+[90m2026-01-29T14:21:14.151Z[39m [36m[skills][39m [90mSanitized skill command name "skill-creator" to "/skill_creator".[39m
+[90m2026-01-29T14:21:14.152Z[39m [36m[skills][39m [90mSanitized skill command name "web-search" to "/web_search".[39m
+[90m2026-01-29T14:21:15.168Z[39m [35m[health][39m [31minitial refresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:21:22.887Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636919,"message":{"message_id":109,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696482,"text":"hi anyupdates?"}}[39m
+2026-01-29T14:21:22.931Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=70 preview="[Telegram 猫 熊 id:8594132339 +2m 2026-01-29 22:21 GMT+8] hi anyupdates?"
+[90m2026-01-29T14:21:23.774Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:21:23.776Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:21:23.778Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:21:23.780Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:21:23.809Z[39m [33m[agent/embedded][39m [90membedded run start: runId=e73a4525-a585-4a53-88da-71ff1bb2beff sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:21:23.850Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:21:23.851Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:21:23.852Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=e73a4525-a585-4a53-88da-71ff1bb2beff sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:21:23.857Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=e73a4525-a585-4a53-88da-71ff1bb2beff[39m
+[90m2026-01-29T14:21:23.862Z[39m [36m[ws][39m [36m→ event agent seq=1 clients=0 run=e73a4525…beff agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:21:35.648Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=e73a4525-a585-4a53-88da-71ff1bb2beff[39m
+[90m2026-01-29T14:21:35.652Z[39m [36m[ws][39m [36m→ event agent seq=2 clients=0 run=e73a4525…beff agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:21:35.654Z[39m [36m[ws][39m [36m→ event chat seq=3 clients=0[39m
+[90m2026-01-29T14:21:35.655Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=e73a4525-a585-4a53-88da-71ff1bb2beff sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=11803[39m
+[90m2026-01-29T14:21:35.658Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:21:35.659Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:21:35.664Z[39m [33m[agent/embedded][39m [90membedded run done: runId=e73a4525-a585-4a53-88da-71ff1bb2beff sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=11882 aborted=false[39m
+[90m2026-01-29T14:21:35.672Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=11891 active=0 queued=0[39m
+[90m2026-01-29T14:21:35.673Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=11895 active=0 queued=0[39m
+[90m2026-01-29T14:21:42.872Z[39m [36m[ws][39m [36m→ event tick seq=4 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:22:12.872Z[39m [36m[ws][39m [36m→ event tick seq=5 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:22:16.556Z[39m [35m[health][39m [31mrefresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:22:42.871Z[39m [36m[ws][39m [36m→ event tick seq=6 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:23:06.947Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636920,"message":{"message_id":111,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696586,"text":"How to add the Wacom account config?"}}[39m
+2026-01-29T14:23:06.984Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=92 preview="[Telegram 猫 熊 id:8594132339 +1m 2026-01-29 22:23 GMT+8] How to add the Wacom account config?"
+[90m2026-01-29T14:23:07.511Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:23:07.512Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:23:07.513Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:23:07.515Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=2 queueSize=0[39m
+[90m2026-01-29T14:23:07.560Z[39m [33m[agent/embedded][39m [90membedded run start: runId=ab88014e-614f-4664-a601-1d13eea169c1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:23:07.578Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:23:07.579Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:23:07.580Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=ab88014e-614f-4664-a601-1d13eea169c1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:23:07.583Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=ab88014e-614f-4664-a601-1d13eea169c1[39m
+[90m2026-01-29T14:23:07.584Z[39m [36m[ws][39m [36m→ event agent seq=7 clients=0 run=ab88014e…69c1 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:23:12.869Z[39m [36m[ws][39m [36m→ event tick seq=8 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:23:14.443Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=ab88014e-614f-4664-a601-1d13eea169c1 tool=exec toolCallId=call_function_t7c6a0v7zbcd_1[39m
+[90m2026-01-29T14:23:14.449Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=ab88014e-614f-4664-a601-1d13eea169c1 tool=exec toolCallId=call_function_t7c6a0v7zbcd_1[39m
+[90m2026-01-29T14:23:15.436Z[39m [35m[health][39m [31mrefresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:23:17.928Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=ab88014e-614f-4664-a601-1d13eea169c1 tool=read toolCallId=call_function_18dd0fr30pkz_1[39m
+[90m2026-01-29T14:23:17.934Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=ab88014e-614f-4664-a601-1d13eea169c1 tool=read toolCallId=call_function_18dd0fr30pkz_1[39m
+[90m2026-01-29T14:23:25.145Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=ab88014e-614f-4664-a601-1d13eea169c1[39m
+[90m2026-01-29T14:23:25.146Z[39m [36m[ws][39m [36m→ event agent seq=9 clients=0 run=ab88014e…69c1 agent=main session=main stream=lifecycle aseq=7 phase=end[39m
+[90m2026-01-29T14:23:25.148Z[39m [36m[ws][39m [36m→ event chat seq=10 clients=0[39m
+[90m2026-01-29T14:23:25.149Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=ab88014e-614f-4664-a601-1d13eea169c1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=17569[39m
+[90m2026-01-29T14:23:25.152Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:23:25.153Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:23:25.157Z[39m [33m[agent/embedded][39m [90membedded run done: runId=ab88014e-614f-4664-a601-1d13eea169c1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=17640 aborted=false[39m
+[90m2026-01-29T14:23:25.161Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=17645 active=0 queued=0[39m
+[90m2026-01-29T14:23:25.162Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=17649 active=0 queued=0[39m
+[90m2026-01-29T14:23:42.870Z[39m [36m[ws][39m [36m→ event tick seq=11 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:24:12.871Z[39m [36m[ws][39m [36m→ event tick seq=12 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:24:13.995Z[39m [35m[health][39m [31mrefresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:24:17.171Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636921,"message":{"message_id":113,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696656,"text":"If I disable the webcam, will it be the case that I cannot search the internet?"}}[39m
+2026-01-29T14:24:17.204Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=136 preview="[Telegram 猫 熊 id:8594132339 +50s 2026-01-29 22:24 GMT+8] If I disable the webcam, will it be the case that I cannot search the internet?"
+[90m2026-01-29T14:24:17.674Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:24:17.675Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:24:17.676Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:24:17.678Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:24:17.700Z[39m [33m[agent/embedded][39m [90membedded run start: runId=0fa2dab2-6e9d-48e7-8d09-fdc265e168b1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:24:17.725Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:24:17.726Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:24:17.727Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=0fa2dab2-6e9d-48e7-8d09-fdc265e168b1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:24:17.729Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=0fa2dab2-6e9d-48e7-8d09-fdc265e168b1[39m
+[90m2026-01-29T14:24:17.731Z[39m [36m[ws][39m [36m→ event agent seq=13 clients=0 run=0fa2dab2…68b1 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:24:23.730Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=0fa2dab2-6e9d-48e7-8d09-fdc265e168b1[39m
+[90m2026-01-29T14:24:23.731Z[39m [36m[ws][39m [36m→ event agent seq=14 clients=0 run=0fa2dab2…68b1 agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:24:23.732Z[39m [36m[ws][39m [36m→ event chat seq=15 clients=0[39m
+[90m2026-01-29T14:24:23.734Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=0fa2dab2-6e9d-48e7-8d09-fdc265e168b1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=6007[39m
+[90m2026-01-29T14:24:23.737Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:24:23.738Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:24:23.740Z[39m [33m[agent/embedded][39m [90membedded run done: runId=0fa2dab2-6e9d-48e7-8d09-fdc265e168b1 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=6061 aborted=false[39m
+[90m2026-01-29T14:24:23.745Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=6066 active=0 queued=0[39m
+[90m2026-01-29T14:24:23.746Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=6070 active=0 queued=0[39m
+[90m2026-01-29T14:24:38.689Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636922,"message":{"message_id":115,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696678,"text":"So please help me disable the webcam."}}[39m
+2026-01-29T14:24:38.725Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=94 preview="[Telegram 猫 熊 id:8594132339 +14s 2026-01-29 22:24 GMT+8] So please help me disable the webcam."
+[90m2026-01-29T14:24:39.186Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:24:39.187Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:24:39.188Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:24:39.189Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:24:39.224Z[39m [33m[agent/embedded][39m [90membedded run start: runId=63d3b42f-f042-455c-93b2-3e13c43125b9 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:24:39.240Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:24:39.241Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:24:39.242Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=63d3b42f-f042-455c-93b2-3e13c43125b9 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:24:39.245Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=63d3b42f-f042-455c-93b2-3e13c43125b9[39m
+[90m2026-01-29T14:24:39.246Z[39m [36m[ws][39m [36m→ event agent seq=16 clients=0 run=63d3b42f…25b9 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:24:42.870Z[39m [36m[ws][39m [36m→ event tick seq=17 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:24:47.544Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=63d3b42f-f042-455c-93b2-3e13c43125b9 tool=edit toolCallId=call_function_tr5bkyyyhdy7_1[39m
+[90m2026-01-29T14:24:47.554Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=63d3b42f-f042-455c-93b2-3e13c43125b9 tool=edit toolCallId=call_function_tr5bkyyyhdy7_1[39m
+[90m2026-01-29T14:24:48.067Z[39m [34m[reload][39m [36mconfig change detected; evaluating reload (models.providers.minimax.models, plugins.entries.wecom.enabled)[39m
+[90m2026-01-29T14:24:48.069Z[39m [34m[reload][39m [33mconfig change requires gateway restart (plugins.entries.wecom.enabled)[39m
+[90m2026-01-29T14:24:48.072Z[39m [36m[gateway][39m [36msignal SIGUSR1 received[39m
+[90m2026-01-29T14:24:48.073Z[39m [36m[gateway][39m [36mreceived SIGUSR1; restarting[39m
+[90m2026-01-29T14:24:48.084Z[39m [34m[gmail-watcher][39m [36mgmail watcher stopped[39m
+[90m2026-01-29T14:24:48.086Z[39m [36m[ws][39m [36m→ event shutdown seq=18 clients=0[39m
+2026-01-29T14:24:48.879Z [clawdbot] Unhandled promise rejection: AbortError: This operation was aborted
+    at node:internal/deps/undici/undici:14902:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[90m2026-01-29T14:29:00.726Z[39m [35m[canvas][39m [36mhost mounted at http://127.0.0.1:18789/__clawdbot__/canvas/ (root /root/clawd/canvas)[39m
+2026-01-29T14:29:00.774Z bonjour: starting (hostname=VM-0-9-opencloudos, instance="VM-0-9-opencloudos (Clawdbot)", gatewayPort=18789, sshPort=22)
+[90m2026-01-29T14:29:00.804Z[39m [36m[heartbeat][39m [36mstarted[39m
+[90m2026-01-29T14:29:00.839Z[39m [36m[gateway][39m [36magent model: minimax/MiniMax-M2.1[39m
+[90m2026-01-29T14:29:00.847Z[39m [36m[gateway][39m [36mlistening on ws://127.0.0.1:18789 (PID 25725)[39m
+[90m2026-01-29T14:29:00.855Z[39m [36m[gateway][39m [36mlistening on ws://[::1]:18789[39m
+[90m2026-01-29T14:29:00.881Z[39m [36m[gateway][39m [36mlog file: /tmp/clawdbot/clawdbot-2026-01-29.log[39m
+[90m2026-01-29T14:29:00.972Z[39m [36m[browser/server][39m [36mBrowser control listening on http://127.0.0.1:18791/[39m
+2026-01-29T14:29:01.038Z Registered hook: boot-md -> gateway:startup
+2026-01-29T14:29:01.041Z Registered hook: command-logger -> command
+2026-01-29T14:29:01.043Z Registered hook: session-memory -> command:new
+[90m2026-01-29T14:29:01.046Z[39m [33m[hooks][39m [36mloaded 3 internal hook handlers[39m
+[90m2026-01-29T14:29:01.875Z[39m [34m[telegram][39m [36m[default] starting provider (@cuteshushu_bot)[39m
+[90m2026-01-29T14:29:02.004Z[39m [36m[skills][39m [90mSanitized skill command name "skill-creator" to "/skill_creator".[39m
+[90m2026-01-29T14:29:02.005Z[39m [36m[skills][39m [90mSanitized skill command name "web-search" to "/web_search".[39m
+[90m2026-01-29T14:29:02.517Z[39m [35m[health][39m [31minitial refresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:29:02.858Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636923,"message":{"message_id":116,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696850,"text":"Hi"}}[39m
+2026-01-29T14:29:02.905Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=58 preview="[Telegram 猫 熊 id:8594132339 +2m 2026-01-29 22:27 GMT+8] Hi"
+[90m2026-01-29T14:29:03.367Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:29:03.368Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:29:03.370Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:29:03.371Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:29:03.406Z[39m [33m[agent/embedded][39m [90membedded run start: runId=d6b35816-d400-4b72-b9ce-24cd0a809414 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:29:03.451Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:29:03.452Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:29:03.455Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=d6b35816-d400-4b72-b9ce-24cd0a809414 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:29:03.461Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=d6b35816-d400-4b72-b9ce-24cd0a809414[39m
+[90m2026-01-29T14:29:03.466Z[39m [36m[ws][39m [36m→ event agent seq=1 clients=0 run=d6b35816…9414 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:29:11.362Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=d6b35816-d400-4b72-b9ce-24cd0a809414[39m
+[90m2026-01-29T14:29:11.363Z[39m [36m[ws][39m [36m→ event agent seq=2 clients=0 run=d6b35816…9414 agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:29:11.365Z[39m [36m[ws][39m [36m→ event chat seq=3 clients=0[39m
+[90m2026-01-29T14:29:11.366Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=d6b35816-d400-4b72-b9ce-24cd0a809414 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=7913[39m
+[90m2026-01-29T14:29:11.367Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:29:11.368Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:29:11.373Z[39m [33m[agent/embedded][39m [90membedded run done: runId=d6b35816-d400-4b72-b9ce-24cd0a809414 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=8001 aborted=false[39m
+[90m2026-01-29T14:29:11.379Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=8007 active=0 queued=0[39m
+[90m2026-01-29T14:29:11.380Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=8011 active=0 queued=0[39m
+[90m2026-01-29T14:29:30.791Z[39m [36m[ws][39m [36m→ event tick seq=4 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:29:43.427Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636924,"message":{"message_id":118,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769696983,"text":"Did you help me disable the webcam in config?"}}[39m
+2026-01-29T14:29:43.468Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=102 preview="[Telegram 猫 熊 id:8594132339 +31s 2026-01-29 22:29 GMT+8] Did you help me disable the webcam in config?"
+[90m2026-01-29T14:29:43.999Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:29:44.001Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=11 queueSize=0[39m
+[90m2026-01-29T14:29:44.004Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:29:44.006Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=3 queueSize=0[39m
+[90m2026-01-29T14:29:44.074Z[39m [33m[agent/embedded][39m [90membedded run start: runId=0d582c03-8f2e-49b4-af7f-a482126a2f54 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:29:44.095Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:29:44.096Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:29:44.097Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=0d582c03-8f2e-49b4-af7f-a482126a2f54 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:29:44.102Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=0d582c03-8f2e-49b4-af7f-a482126a2f54[39m
+[90m2026-01-29T14:29:44.105Z[39m [36m[ws][39m [36m→ event agent seq=5 clients=0 run=0d582c03…2f54 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:29:49.433Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=0d582c03-8f2e-49b4-af7f-a482126a2f54[39m
+[90m2026-01-29T14:29:49.436Z[39m [36m[ws][39m [36m→ event agent seq=6 clients=0 run=0d582c03…2f54 agent=main session=main stream=lifecycle aseq=2 phase=end[39m
+[90m2026-01-29T14:29:49.438Z[39m [36m[ws][39m [36m→ event chat seq=7 clients=0[39m
+[90m2026-01-29T14:29:49.440Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=0d582c03-8f2e-49b4-af7f-a482126a2f54 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=5342[39m
+[90m2026-01-29T14:29:49.442Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:29:49.443Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:29:49.446Z[39m [33m[agent/embedded][39m [90membedded run done: runId=0d582c03-8f2e-49b4-af7f-a482126a2f54 sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=5439 aborted=false[39m
+[90m2026-01-29T14:29:49.449Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=5442 active=0 queued=0[39m
+[90m2026-01-29T14:29:49.450Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=5448 active=0 queued=0[39m
+[90m2026-01-29T14:30:00.788Z[39m [36m[ws][39m [36m→ event tick seq=8 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:30:01.998Z[39m [35m[health][39m [31mrefresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:30:02.783Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636925,"message":{"message_id":120,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769697002,"text":"Yes plz"}}[39m
+2026-01-29T14:30:02.832Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=64 preview="[Telegram 猫 熊 id:8594132339 +12s 2026-01-29 22:30 GMT+8] Yes plz"
+[90m2026-01-29T14:30:03.336Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:30:03.338Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:30:03.339Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:30:03.340Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:30:03.365Z[39m [33m[agent/embedded][39m [90membedded run start: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:30:03.382Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:30:03.383Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:30:03.384Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:30:03.386Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f[39m
+[90m2026-01-29T14:30:03.387Z[39m [36m[ws][39m [36m→ event agent seq=9 clients=0 run=0b04b4bd…ec0f agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+2026-01-29T14:30:08.208Z tools: gateway failed stack:
+Error: Gateway restart is disabled. Set commands.restart=true to enable.
+    at execute (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/dist/agents/tools/gateway-tool.js:63:27)
+    at Object.execute (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/dist/agents/pi-tools.abort.js:38:26)
+    at Object.execute (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/dist/agents/pi-tool-definition-adapter.js:25:39)
+    at Object.execute (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/node_modules/@mariozechner/pi-coding-agent/src/core/extensions/wrapper.ts:21:15)
+    at Object.execute (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/node_modules/@mariozechner/pi-coding-agent/src/core/extensions/wrapper.ts:71:31)
+    at executeToolCalls (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/node_modules/@mariozechner/pi-agent-core/src/agent-loop.ts:324:24)
+    at runLoop (file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/node_modules/@mariozechner/pi-agent-core/src/agent-loop.ts:157:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/node_modules/@mariozechner/pi-agent-core/src/agent-loop.ts:51:3
+2026-01-29T14:30:08.210Z [tools] gateway failed: Gateway restart is disabled. Set commands.restart=true to enable.
+[90m2026-01-29T14:30:08.218Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f tool=gateway toolCallId=call_function_lmboftrzck3c_1[39m
+[90m2026-01-29T14:30:08.225Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f tool=gateway toolCallId=call_function_lmboftrzck3c_1[39m
+[90m2026-01-29T14:30:12.245Z[39m [33m[agent/embedded][39m [90membedded run agent end: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f[39m
+[90m2026-01-29T14:30:12.247Z[39m [36m[ws][39m [36m→ event agent seq=10 clients=0 run=0b04b4bd…ec0f agent=main session=main stream=lifecycle aseq=4 phase=end[39m
+[90m2026-01-29T14:30:12.248Z[39m [36m[ws][39m [36m→ event chat seq=11 clients=0[39m
+[90m2026-01-29T14:30:12.249Z[39m [33m[agent/embedded][39m [90membedded run prompt end: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=8865[39m
+[90m2026-01-29T14:30:12.251Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=processing new=idle reason="run_completed" queueDepth=0[39m
+[90m2026-01-29T14:30:12.252Z[39m [31m[diagnostic][39m [90mrun cleared: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=0[39m
+[90m2026-01-29T14:30:12.261Z[39m [33m[agent/embedded][39m [90membedded run done: runId=0b04b4bd-0cfe-400e-9d11-2a85ea66ec0f sessionId=87b38625-09b1-48d2-b613-58bf825e157c durationMs=8920 aborted=false[39m
+[90m2026-01-29T14:30:12.338Z[39m [31m[diagnostic][39m [90mlane task done: lane=main durationMs=8996 active=0 queued=0[39m
+[90m2026-01-29T14:30:12.343Z[39m [31m[diagnostic][39m [90mlane task done: lane=session:agent:main:main durationMs=9000 active=0 queued=0[39m
+[90m2026-01-29T14:30:30.788Z[39m [36m[ws][39m [36m→ event tick seq=12 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:31:00.787Z[39m [36m[ws][39m [36m→ event tick seq=13 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:31:02.898Z[39m [35m[health][39m [31mrefresh failed: Cannot read properties of undefined (reading 'appId')[39m
+[90m2026-01-29T14:31:18.280Z[39m [34m[telegram][39m [90mupdate: {"update_id":200636926,"message":{"message_id":122,"from":{"id":8594132339,"is_bot":false,"first_name":"猫","last_name":"熊","language_code":"zh-hans"},"chat":{"id":8594132339,"first_name":"猫","last_name":"熊","type":"private"},"date":1769697078,"text":"just ran it"}}[39m
+2026-01-29T14:31:18.314Z telegram inbound: chatId=8594132339 from=telegram:8594132339 len=67 preview="[Telegram 猫 熊 id:8594132339 +1m 2026-01-29 22:31 GMT+8] just ran it"
+[90m2026-01-29T14:31:19.348Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=session:agent:main:main queueSize=1[39m
+[90m2026-01-29T14:31:19.349Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=session:agent:main:main waitMs=9 queueSize=0[39m
+[90m2026-01-29T14:31:19.350Z[39m [31m[diagnostic][39m [90mlane enqueue: lane=main queueSize=1[39m
+[90m2026-01-29T14:31:19.351Z[39m [31m[diagnostic][39m [90mlane dequeue: lane=main waitMs=1 queueSize=0[39m
+[90m2026-01-29T14:31:19.380Z[39m [33m[agent/embedded][39m [90membedded run start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 sessionId=87b38625-09b1-48d2-b613-58bf825e157c provider=minimax model=MiniMax-M2.1 thinking=off messageChannel=telegram[39m
+[90m2026-01-29T14:31:19.395Z[39m [31m[diagnostic][39m [90msession state: sessionId=87b38625-09b1-48d2-b613-58bf825e157c sessionKey=unknown prev=idle new=processing reason="run_started" queueDepth=0[39m
+[90m2026-01-29T14:31:19.397Z[39m [31m[diagnostic][39m [90mrun registered: sessionId=87b38625-09b1-48d2-b613-58bf825e157c totalActive=1[39m
+[90m2026-01-29T14:31:19.398Z[39m [33m[agent/embedded][39m [90membedded run prompt start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 sessionId=87b38625-09b1-48d2-b613-58bf825e157c[39m
+[90m2026-01-29T14:31:19.401Z[39m [33m[agent/embedded][39m [90membedded run agent start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830[39m
+[90m2026-01-29T14:31:19.403Z[39m [36m[ws][39m [36m→ event agent seq=14 clients=0 run=e01e6cb0…a830 agent=main session=main stream=lifecycle aseq=1 phase=start[39m
+[90m2026-01-29T14:31:25.673Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=read toolCallId=call_function_td7lhl466lr8_1[39m
+[90m2026-01-29T14:31:25.685Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=read toolCallId=call_function_td7lhl466lr8_1[39m
+[90m2026-01-29T14:31:30.788Z[39m [36m[ws][39m [36m→ event tick seq=15 clients=0 dropIfSlow=true[39m
+[90m2026-01-29T14:31:39.666Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=exec toolCallId=call_function_cz2zpvw7xgu4_1[39m
+[90m2026-01-29T14:31:39.672Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=exec toolCallId=call_function_cz2zpvw7xgu4_1[39m
+[90m2026-01-29T14:31:45.897Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=edit toolCallId=call_function_pvc2pn2n1u1w_1[39m
+2026-01-29T14:31:45.903Z tools: edit failed stack:
+Error: Could not find the exact text in /root/.clawdbot/clawdbot.json. The old text must match exactly including all whitespace and newlines.
+    at file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/clawdbot/node_modules/@mariozechner/pi-coding-agent/src/core/tools/edit.ts:135:9
+2026-01-29T14:31:45.905Z [tools] edit failed: Could not find the exact text in /root/.clawdbot/clawdbot.json. The old text must match exactly including all whitespace and newlines.
+[90m2026-01-29T14:31:45.909Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=edit toolCallId=call_function_pvc2pn2n1u1w_1[39m
+[90m2026-01-29T14:31:52.156Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=read toolCallId=call_function_9jfd2kv0qdl2_1[39m
+[90m2026-01-29T14:31:52.160Z[39m [33m[agent/embedded][39m [90membedded run tool end: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=read toolCallId=call_function_9jfd2kv0qdl2_1[39m
+[90m2026-01-29T14:31:56.794Z[39m [33m[agent/embedded][39m [90membedded run tool start: runId=e01e6cb0-2cb7-441b-b9e4-26301368a830 tool=exec toolCallId=call_function_zn7ol2hkt4m8_1[39m
+[90m2026-01-29T14:32:00.790Z[39m [36m[ws][39m [36m→ event tick seq=16 clients=0 dropIfSlow=true[39m
+2026-01-29T14:32:01.612Z [clawdbot] Unhandled promise rejection: TypeError: fetch failed
+    at node:internal/deps/undici/undici:14902:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
