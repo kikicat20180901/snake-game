@@ -3,113 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>贪吃蛇游戏 - Snake Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>🐍 贪吃蛇游戏 - Snake Game</title>
+    <meta name="description" content="一个功能完整的HTML5贪吃蛇游戏，支持多种难度等级和响应式设计">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 20px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .features {
+            margin: 30px 0;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .features h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            margin: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        
+        .features li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        
+        .mobile-notice {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            font-size: 1em;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .game-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .game-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+        }
+        
+        .secondary-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .container { padding: 20px; margin: 10px; }
+            .button-container { flex-direction: column; align-items: center; }
+            .game-button { width: 200px; text-align: center; }
+        }
+    </style>
 </head>
 <body>
-    <div class="game-container">
-        <div class="game-header">
-            <h1>🐍 贪吃蛇游戏</h1>
-            <div class="score-board">
-                <div class="score-item">
-                    <span class="label">分数:</span>
-                    <span id="score" class="value">0</span>
-                </div>
-                <div class="score-item">
-                    <span class="label">最高分:</span>
-                    <span id="highScore" class="value">0</span>
-                </div>
-                <div class="score-item">
-                    <span class="label">速度:</span>
-                    <span id="speed" class="value">1</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="game-area">
-            <canvas id="gameCanvas" width="600" height="600"></canvas>
-            
-            <div id="gameOverlay" class="game-overlay">
-                <div class="overlay-content">
-                    <h2 id="overlayTitle">欢迎来到贪吃蛇游戏！</h2>
-                    <p id="overlayMessage">使用方向键控制蛇的移动</p>
-                    <div class="overlay-buttons">
-                        <button id="startBtn" class="game-btn primary">开始游戏</button>
-                        <button id="pauseBtn" class="game-btn secondary" style="display: none;">暂停</button>
-                        <button id="resumeBtn" class="game-btn secondary" style="display: none;">继续</button>
-                        <button id="restartBtn" class="game-btn danger">重新开始</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="controls-panel">
-            <div class="controls-section">
-                <h3>游戏控制</h3>
-                <div class="control-grid">
-                    <div class="control-item">
-                        <span class="key">↑</span>
-                        <span class="desc">向上</span>
-                    </div>
-                    <div class="control-item">
-                        <span class="key">↓</span>
-                        <span class="desc">向下</span>
-                    </div>
-                    <div class="control-item">
-                        <span class="key">←</span>
-                        <span class="desc">向左</span>
-                    </div>
-                    <div class="control-item">
-                        <span class="key">→</span>
-                        <span class="desc">向右</span>
-                    </div>
-                    <div class="control-item">
-                        <span class="key">空格</span>
-                        <span class="desc">暂停/继续</span>
-                    </div>
-                    <div class="control-item">
-                        <span class="key">R</span>
-                        <span class="desc">重新开始</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="settings-section">
-                <h3>游戏设置</h3>
-                <div class="setting-item">
-                    <label for="difficulty">难度等级:</label>
-                    <select id="difficulty">
-                        <option value="easy">简单 (慢速)</option>
-                        <option value="medium" selected>中等 (正常)</option>
-                        <option value="hard">困难 (快速)</option>
-                        <option value="extreme">极限 (超快)</option>
-                    </select>
-                </div>
-                <div class="setting-item">
-                    <label for="gridSize">网格大小:</label>
-                    <select id="gridSize">
-                        <option value="15">15x15 (小)</option>
-                        <option value="20" selected>20x20 (中)</option>
-                        <option value="25">25x25 (大)</option>
-                        <option value="30">30x30 (超大)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="game-info">
-            <h3>游戏规则</h3>
+    <div class="container">
+        <h1>🐍 贪吃蛇游戏</h1>
+        <p class="subtitle">一个功能完整的HTML5贪吃蛇游戏，支持多种难度和响应式设计</p>
+        
+        <div class="features">
+            <h3>🎮 游戏特色</h3>
             <ul>
-                <li>使用方向键控制蛇的移动方向</li>
-                <li>吃到食物（红色方块）可以增长并获得分数</li>
-                <li>撞墙或撞到自己的身体游戏结束</li>
-                <li>随着分数增加，蛇的移动速度会加快</li>
-                <li>游戏会自动保存你的最高分记录</li>
+                <li>4种难度等级（简单、中等、困难、极限）</li>
+                <li>响应式设计，完美支持手机和平板</li>
+                <li>触摸滑动控制和键盘方向键控制</li>
+                <li>实时分数记录和最高分保存</li>
+                <li>现代化UI设计和流畅动画效果</li>
             </ul>
         </div>
+        
+        <div class="mobile-notice">
+            📱 <strong>移动端提示</strong>: 支持触摸滑动控制，在手机和平板上有更好的游戏体验！
+        </div>
+        
+        <div class="button-container">
+            <a href="game.html" class="game-button">🚀 开始游戏</a>
+            <a href="https://github.com/kikicat20180901/snake-game" class="game-button secondary-button" target="_blank">📁 查看源码</a>
+        </div>
+        
+        <div class="footer">
+            ✨ 使用方向键或触摸滑动控制蛇的移动
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
